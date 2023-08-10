@@ -2,3 +2,10 @@ body {
   margin: 0;
   background-color: #011628;
 }
+
+.loading {
+  color: white;
+  font-size: larger;
+  text-align: center;
+  padding: 10px;
+}

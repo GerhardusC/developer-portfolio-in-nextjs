@@ -247,7 +247,21 @@ const Car = () => {
 
 const Background = () => {
   return (
-    <Suspense fallback={null}>
+    <Suspense
+      fallback={
+        <div className="loading">
+          <h2>Waiting for interactive elements to load...</h2>
+          <p>
+            Let me introduce myself in the meantime. I am Gerhardus Cornelis
+            Stefanus Cronjé.
+          </p>
+          <p>
+            I started out as a teacher, then became a learning designer, and am
+            now a web developer.
+          </p>
+        </div>
+      }
+    >
       {/* This canvas contains all the 3D objects. */}
       <Canvas>
         {/* Adding a perspective camera from three/drei and giving it a position. */}
