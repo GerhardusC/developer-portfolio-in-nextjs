@@ -43,7 +43,7 @@ const MyLayout = ({ children }) => {
             justify-content: center;
             min-height: 200px;
           }
-          ul {
+          nav ul {
             display: flex;
             justify-content: space-around;
             align-items: center;
@@ -53,7 +53,7 @@ const MyLayout = ({ children }) => {
             flex-wrap: wrap;
             list-style: none;
           }
-          li {
+          nav li {
             padding: 20px;
             font-size: x-large;
             display: flex;
@@ -178,14 +178,21 @@ const MyLayout = ({ children }) => {
             align-items: center;
           }
           .project-links a {
+            display: flex;
+            align-items: center;
             color: black;
             padding: 5px;
             margin: 4px;
             border-radius: 5px;
             box-shadow: 2px 2px 5px #a6a6a6;
           }
+
+          .project-links a:hover {
+            transform: scale(1.1);
+          }
           .brand-icon {
             width: 30px;
+            height: 30px;
           }
           .contact-link {
             background-color: #191970;

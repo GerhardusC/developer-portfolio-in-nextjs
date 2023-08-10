@@ -127,6 +127,7 @@ const Projects = () => {
                 <motion.a
                   initial="hidden"
                   whileInView="visible"
+                  whileHover={{ scale: 1.1, transition: { duration: 0.1 } }}
                   variants={projectAnimation}
                   href={project.link}
                   target="_blank"
@@ -138,10 +139,12 @@ const Projects = () => {
                     src="/netlifyicon.png"
                     className="brand-icon"
                   />
+                  <p style={{ fontWeight: "400" }}>Live</p>
                 </motion.a>
                 <motion.a
                   initial="hidden"
                   whileInView="visible"
+                  whileHover={{ scale: 1.1, transition: { duration: 0.1 } }}
                   variants={projectAnimation}
                   href={project.githubLink}
                   target="_blank"
@@ -153,6 +156,7 @@ const Projects = () => {
                     src="/githublogo.png"
                     className="brand-icon"
                   />
+                  <p style={{ fontWeight: "400" }}>Code</p>
                 </motion.a>
               </motion.div>
               <motion.div

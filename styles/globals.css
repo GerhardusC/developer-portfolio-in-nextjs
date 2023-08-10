@@ -9,3 +9,22 @@ body {
   text-align: center;
   padding: 10px;
 }
+
+.tag-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 10px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.tag {
+  box-shadow: 2px 2px 5px gray;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #00838f;
+  color: white;
+  font-weight: 300;
+}

@@ -3,6 +3,7 @@
 import MyLayout from "../components/MyLayout";
 import { AnimatePresence, motion } from "framer-motion";
 import Card from "@/components/Card";
+import Tags from "@/components/Tags";
 
 // An array of my education items.
 const educationList = [
@@ -57,6 +58,19 @@ const workExperienceList = [
   },
 ];
 
+const techSkills = [
+  "HTML",
+  "CSS",
+  "JavaScript",
+  "React",
+  "Express",
+  "MongoDB",
+  "Next.js",
+  "DaVinci Resolve",
+  "Blender",
+  "OpenToonz",
+];
+
 // These are used for framer motion to animate when things are hidden and shown.
 const paraBlocks = {
   visible: {
@@ -101,40 +115,47 @@ const About = () => {
           >
             <h1>About me</h1>
             <p>
-              I am Gerhardus Cronjé, a web developer who used to be teacher and
-              learning designer. I started out my career as a mathematics and
-              physics teacher, after which I moved into the learning design
-              space where I was responsible for writing educational physical
-              science content.
+              I am Gerhardus Cronjé, a web developer with a background that
+              includes teaching and learning design. My professional journey
+              began in the field of education, where I served as a mathematics
+              and physics teacher. Later, I transitioned to the realm of
+              learning design, where my responsibilities included creating
+              educational content for physical science courses.
             </p>
             <p>
-              My journey with programming started very simply while I was a
-              teacher. I used Python to write a little script that was able to
-              automatically draft letters to parents based on learners' marks.
-              This saved me a lot of time, and I started falling in love with
-              programming.
+              My introduction to programming occurred during my time as a
+              teacher. I harnessed the power of Python to create a streamlined
+              script that automated the process of generating letters to parents
+              based on student performance. This endeavor not only saved me
+              valuable time but also ignited a genuine passion for programming.
             </p>
             <p>
-              Some time later, while I designing the Physical Science matric
-              course for the UCT online high school, I started falling in love
-              with web development. I had to work with HTML every day while
-              developing content on Moodle to make sure the web pages display
-              properly.
+              My appreciation for web development blossomed further when I was
+              tasked with designing the Physical Science matric course for the
+              UCT online high school. Working extensively with HTML while
+              developing content on Moodle, I gained a profound understanding of
+              web page presentation.
             </p>
             <p>
-              I realised that having access to HTML also allows me to add
-              additional interactivity to my lessons if I used some JavaScript
-              along with the html. From here I designed simple multiple choice,
-              short answer and numerical questions that I could reuse within my
-              lessons in a context where Moodle would normally not allow it.
+              I discovered that combining HTML with JavaScript allowed me to
+              infuse interactivity into my lessons. I devised a range of
+              interactive elements, such as multiple-choice, short answer, and
+              numerical questions, enabling me to enhance the learning
+              experience in some areas where the constraints of the Moodle
+              platform didn't allow for this interactivity.
             </p>
             <p>
-              I enjoyed web development and programming so much that I decided I
-              am going to do a web development bootcamp. I am currently in the
-              process of completing my 6 month full stack web development
-              bootcamp at Hyperion Dev and am proud to say that I am now
-              officially a web developer.
+              My enthusiasm for web development led me to pursue a comprehensive
+              web development bootcamp. I am currently immersed in a 6-month
+              full-stack web development program at Hyperion Dev in partnership
+              with Stellenbosch University. I take immense pride in now
+              officially being recognized as a web developer.
             </p>
+            <p>
+              My skillset encompasses a diverse array of technologies, including
+              but not limited to:
+            </p>
+            <Tags tags={techSkills} />
           </motion.div>
           <motion.div
             variants={para}
