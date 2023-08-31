@@ -4,6 +4,25 @@ import { motion } from "framer-motion";
 // This is a list of my projects that I completed so far.
 const projects = [
   {
+    title: "Learning management system",
+    description:
+      "a lightweight simplified Learning Management System, which allows the creation of short lessons that include videos, explanations and quiz questions.",
+    link: "https://explain-in-5-like-im-5.vercel.app/",
+    githubLink:
+      "https://github.com/GerhardusC/learning-management-system-frontend-ei5li5",
+    image: "/learningmanagementsystem.png",
+    tools: ["JavaScript", "Express", "HTML", "React", "Next", "CSS", "MongoDB"],
+  },
+  {
+    title: "Recipe finder",
+    description:
+      "This app is a recipe searcher app. You can search for a type of food, for example 'curry', and get an index of a variety of curries. If you click on any of the curries, you will be presented with some more details about the curry.",
+    link: "https://recipe-finder-themealdb.vercel.app/",
+    githubLink: "https://github.com/GerhardusC/recipe-finder",
+    image: "/recipefinder.png",
+    tools: ["JavaScript", "HTML", "React", "Next", "CSS"],
+  },
+  {
     title: "Hangman",
     description:
       "This app is a hangman game like any other hangman game. I built this app in React using Create React App. The game state is also managed by Redux.",
