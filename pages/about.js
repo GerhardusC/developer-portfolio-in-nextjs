@@ -65,10 +65,10 @@ const techSkills = [
   "React",
   "Express",
   "MongoDB",
+  "Node.js",
   "Next.js",
-  "DaVinci Resolve",
-  "Blender",
-  "OpenToonz",
+  "SQL",
+  "PHP",
 ];
 
 // These are used for framer motion to animate when things are hidden and shown.
@@ -115,47 +115,67 @@ const About = () => {
           >
             <h1>About me</h1>
             <p>
-              I am Gerhardus Cronjé, a web developer with a background that
-              includes teaching and learning design. My professional journey
-              began in the field of education, where I served as a mathematics
-              and physics teacher. Later, I transitioned to the realm of
-              learning design, where my responsibilities included creating
-              educational content for physical science courses.
+              I am Gerhardus Cronjé, a full stack web developer, trained to
+              develop web applications using the MERN (MongoDB, Express.js,
+              React.js, Node.js) stack.
             </p>
             <p>
-              My introduction to programming occurred during my time as a
-              teacher. I harnessed the power of Python to create a streamlined
-              script that automated the process of generating letters to parents
-              based on student performance. This endeavor not only saved me
-              valuable time but also ignited a genuine passion for programming.
+              I started my career as a teacher, teaching mathematics and physics
+              at an FET level for two years. In this role, I learnt how to work
+              in a team to deliver content to learners effectively.
             </p>
             <p>
-              My appreciation for web development blossomed further when I was
-              tasked with designing the Physical Science matric course for the
-              UCT online high school. Working extensively with HTML while
-              developing content on Moodle, I gained a profound understanding of
-              web page presentation.
+              My interest in programming started when I was a teacher, and I
+              wrote simple scripts to automate the drafting of letters to
+              parents.
             </p>
             <p>
-              I discovered that combining HTML with JavaScript allowed me to
-              infuse interactivity into my lessons. I devised a range of
-              interactive elements, such as multiple-choice, short answer, and
-              numerical questions, enabling me to enhance the learning
-              experience in some areas where the constraints of the Moodle
-              platform didn't allow for this interactivity.
+              My interest in technology grew, which led me to pursue an
+              opportunity to create online learning content as a learning
+              designer. In this position, I analysed curriculum documents to
+              create learning plans, which I then used to turn curriculum
+              content into meaningful learning experiences. In this position, I
+              also learnt how to work in high pressure environments and using
+              Agile methodologies.
             </p>
             <p>
-              My enthusiasm for web development led me to pursue a comprehensive
-              web development bootcamp. I am currently immersed in a 6-month
-              full-stack web development program at Hyperion Dev in partnership
-              with Stellenbosch University. I take immense pride in now
-              officially being recognized as a web developer.
+              While creating content at the online high school, my interest in
+              programming grew even more when I found out I could write HTML,
+              CSS, and JavaScript in Moodle to make my content more engaging.
             </p>
             <p>
-              My skillset encompasses a diverse array of technologies, including
-              but not limited to:
+              It was at this time that I decided to complete a part-time,
+              six-month, full stack web development bootcamp. During the
+              bootcamp I learnt how to build interactive full stack web
+              applications and thoroughly enjoy solving problems by building web
+              applications.
+            </p>
+            <p>
+              <b>My skillset:</b>
             </p>
             <Tags tags={techSkills} />
+          </motion.div>
+          <motion.div
+            variants={para}
+            className="para-container"
+            initial="hidden"
+            whileInView="visible"
+          >
+            <h2>Work experience</h2>
+            <div className="cards-container">
+              {/* Making cards for each work experience item and passing work experience down as props. */}
+              {workExperienceList.map((workItem) => {
+                return (
+                  <Card
+                    key={workItem.content}
+                    title={workItem.title}
+                    subtitle={workItem.subtitle}
+                    content={workItem.content}
+                    image={workItem.image}
+                  />
+                );
+              })}
+            </div>
           </motion.div>
           <motion.div
             variants={para}
@@ -182,28 +202,6 @@ const About = () => {
                 );
               })}
             </motion.div>
-          </motion.div>
-          <motion.div
-            variants={para}
-            className="para-container"
-            initial="hidden"
-            whileInView="visible"
-          >
-            <h2>Work experience</h2>
-            <div className="cards-container">
-              {/* Making cards for each work experience item and passing work experience down as props. */}
-              {workExperienceList.map((workItem) => {
-                return (
-                  <Card
-                    key={workItem.content}
-                    title={workItem.title}
-                    subtitle={workItem.subtitle}
-                    content={workItem.content}
-                    image={workItem.image}
-                  />
-                );
-              })}
-            </div>
           </motion.div>
         </motion.div>
       </AnimatePresence>

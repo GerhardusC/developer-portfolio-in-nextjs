@@ -6,7 +6,7 @@ const projects = [
   {
     title: "Learning management system",
     description:
-      "a lightweight simplified Learning Management System, which allows the creation of short lessons that include videos, explanations and quiz questions.",
+      "A Learning Management System, which allows the creation of interactive lessons that contain videos, explanations and quiz questions.",
     link: "https://explain-in-5-like-im-5.vercel.app/",
     githubLink:
       "https://github.com/GerhardusC/learning-management-system-frontend-ei5li5",
